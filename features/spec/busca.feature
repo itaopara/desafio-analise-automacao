@@ -16,3 +16,5 @@ Funcionalidade: Buscas no Fake Ecommerce
   # Completar o cenário abaixo
   @busca_sem_resultados
   Cenário: Busca sem resultados
+    Quando buscar pelo produto 'null'
+    Então deve ser retornado uma mensagem "0 results have been found."
